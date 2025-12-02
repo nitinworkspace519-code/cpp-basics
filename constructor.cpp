@@ -8,9 +8,9 @@ class student{
     student(){
         cout<<"Rollno: ";
         cin>>rollno;
-        cin.ignore();
+        cin.ignore(); // clears leftover newline
         cout<<"Name: ";
-        getline(cin, name);
+        getline(cin, name); // reads full name with spaces
     }
     void display(){
         cout<<"Rollno: "<<rollno<<endl;
